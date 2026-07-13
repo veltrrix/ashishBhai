@@ -10,7 +10,7 @@
     <meta name="author" content="Best Telegram Channel">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t.me/+a2JVj3l03bxiZGM1">
+    <meta property="og:url" content="https://telegram.me/+a2JVj3l03bxiZGM1">
     <meta property="og:title" content="🏆 #1 Telegram Channel | Join The Elite Community">
     <meta property="og:description" content="Exclusive content, real‑time alerts, and a trusted community of thousands. Join the most popular Telegram channel today – free and instant access.">
     <meta property="og:image" content="https://i.ibb.co/9mkjpGjS/ashish.jpg">
@@ -19,7 +19,7 @@
     <meta property="og:site_name" content="Best Telegram Channel">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://t.me/+a2JVj3l03bxiZGM1">
+    <meta name="twitter:url" content="https://telegram.me/+a2JVj3l03bxiZGM1">
     <meta name="twitter:title" content="🏆 #1 Telegram Channel | Join The Elite Community">
     <meta name="twitter:description" content="Exclusive content, real‑time alerts, and a trusted community of thousands. Join the most popular Telegram channel today – free and instant access.">
     <meta name="twitter:image" content="https://i.ibb.co/9mkjpGjS/ashish.jpg">
@@ -29,9 +29,13 @@
     <link rel="apple-touch-icon" href="https://i.ibb.co/9mkjpGjS/ashish.jpg">
     <link rel="canonical" href="https://t.me/+a2JVj3l03bxiZGM1">
     
+    <!-- Preconnect for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<!-- Meta Pixel Code -->
+
+   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -49,559 +53,609 @@ src="https://www.facebook.com/tr?id=36914489931531341&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
     <style>
+        /* ── Reset & Base ── */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --bg: #0b0e14;
+            --card: #121820;
+            --text: #f0f4ff;
+            --muted: #8b9bb5;
+            --cyan: #38bdf8;
+            --cyan-dark: #0ea5e9;
+            --glow: rgba(56, 189, 248, 0.35);
         }
 
         body {
-            height: 100vh;
+            background: var(--bg);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
             align-items: center;
-            overflow: hidden;
-            background: radial-gradient(circle at 20% 30%, #1a0b2e, #0d001a 80%);
-            animation: bgPulse 8s ease-in-out infinite alternate;
+            justify-content: center;
+            padding: 16px;
+            background-image:
+                radial-gradient(ellipse at 20% 50%, rgba(56, 189, 248, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(56, 189, 248, 0.04) 0%, transparent 50%);
         }
 
-        @keyframes bgPulse {
-            0% {
-                background: radial-gradient(circle at 20% 30%, #2d1b4e, #0a0015 80%);
-            }
-            100% {
-                background: radial-gradient(circle at 80% 70%, #3d1f5e, #0a0015 80%);
-            }
-        }
-
-        .card {
-            width: min(460px, 94%);
-            padding: 28px 24px 24px;
-            border-radius: 36px;
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: var(--card);
+            border-radius: 28px;
+            padding: 32px 24px 28px;
+            text-align: center;
+            border: 1px solid rgba(56, 189, 248, 0.12);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(56, 189, 248, 0.04);
+            backdrop-filter: blur(2px);
             position: relative;
-            background: rgba(18, 10, 30, 0.7);
-            backdrop-filter: blur(28px);
-            border: 1px solid rgba(255, 215, 0, 0.25);
-            box-shadow:
-                0 0 35px #ff6b9d44,
-                0 0 70px #c44dff33,
-                0 30px 60px rgba(0, 0, 0, 0.6);
             overflow: hidden;
-            transition: all 0.3s ease;
         }
 
-        .card::before {
+        /* subtle animated border glow */
+        .container::before {
             content: '';
             position: absolute;
             inset: -2px;
-            border-radius: 38px;
+            border-radius: 28px;
             padding: 2px;
-            background: conic-gradient(from 0deg, #ffb347, #ff6b9d, #c44dff, #ffb347, #ff6b9d, #c44dff);
-            background-size: 200% 200%;
-            animation: rotateBorder 6s linear infinite;
+            background: conic-gradient(from 0deg, transparent, rgba(56, 189, 248, 0.15), transparent 60%);
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
-            z-index: 0;
+            pointer-events: none;
+            animation: spinGlow 8s linear infinite;
         }
 
-        @keyframes rotateBorder {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
+        @keyframes spinGlow {
+            to {
                 transform: rotate(360deg);
             }
         }
 
-        .card > * {
+        /* ── Profile Image ── */
+        .profile-wrap {
             position: relative;
-            z-index: 1;
-        }
-
-        .badge {
             display: inline-block;
-            padding: 10px 22px;
-            border-radius: 100px;
-            background: linear-gradient(135deg, #ffb347, #ff6b9d);
-            color: #fff;
-            font-weight: 700;
-            font-size: 14px;
-            margin: 0 auto 8px;
-            display: table;
-            box-shadow: 0 0 25px #ff6b9d88, 0 8px 20px rgba(255, 107, 157, 0.3);
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            backdrop-filter: blur(10px);
+            margin-bottom: 14px;
         }
 
-        .badge i {
-            margin-right: 8px;
-            color: #fff;
-            font-size: 14px;
-            filter: drop-shadow(0 0 6px #ffd700);
-            animation: trophyGlow 2s infinite;
-        }
-
-        @keyframes trophyGlow {
-            0%, 100% {
-                text-shadow: 0 0 8px #ffd700;
-            }
-            50% {
-                text-shadow: 0 0 18px #ffd700, 0 0 25px #ffb347;
-            }
-        }
-
-        /* Top heading as a single link */
-        h1 {
-            margin-top: 12px;
-            text-align: center;
-            font-size: 32px;
-            font-weight: 800;
-            line-height: 1.2;
-            white-space: nowrap;
-        }
-
-        h1 a {
-            color: #ff6b9d;
-            text-decoration: none;
-            text-shadow: 0 0 20px #ff6b9d88, 0 4px 10px rgba(255, 20, 147, 0.3);
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-
-        h1 a:hover {
-            text-shadow: 0 0 30px #ff1493, 0 0 50px #ff6b9d;
-            transform: scale(1.02);
-        }
-
-        .desc {
-            margin-top: 8px;
-            text-align: center;
-            color: #f0d9ff;
-            font-size: 14px;
-            line-height: 1.6;
-            font-weight: 400;
-            max-width: 90%;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 0 0 8px rgba(255, 107, 157, 0.4);
-        }
-
-        /* Placeholder logo with multiple ring animations */
-        .logo {
-            width: 180px;
-            height: 180px;
+        .profile {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin: 20px auto 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            background: linear-gradient(145deg, #ffb347, #c44dff, #ff6b9d);
-            background-size: 200% 200%;
-            animation: floatLogo 3s ease-in-out infinite, gradientShift 5s ease infinite;
-            box-shadow:
-                0 0 50px #ff6b9d,
-                0 0 90px #c44dff66,
-                0 20px 40px rgba(0, 0, 0, 0.6);
+            border: 3px solid var(--cyan);
+            box-shadow: 0 0 30px var(--glow), 0 0 60px rgba(56, 189, 248, 0.08);
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            background: #1a2633;
         }
 
-        /* Placeholder SVG avatar */
-        .logo .avatar-placeholder {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .profile:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 40px var(--glow), 0 0 80px rgba(56, 189, 248, 0.12);
         }
 
-        .logo svg {
-            width: 80px;
-            height: 80px;
-            fill: rgba(255, 255, 255, 0.9);
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-        }
-
-        /* Multiple glowing rings */
-        .ring {
+        /* ring pulse behind avatar */
+        .profile-wrap::after {
+            content: '';
             position: absolute;
+            inset: -8px;
             border-radius: 50%;
-            border: 2px solid rgba(255, 215, 0, 0.6);
-            animation: ringPulse 2.5s ease-out infinite;
-            pointer-events: none;
-        }
-
-        .ring:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-        .ring:nth-child(3) {
-            animation-delay: 1s;
+            border: 2px solid rgba(56, 189, 248, 0.15);
+            animation: ringPulse 2.4s ease-in-out infinite;
         }
 
         @keyframes ringPulse {
-            0% {
-                width: 100%;
-                height: 100%;
-                opacity: 0.8;
-                border-width: 3px;
-            }
+            0%,
             100% {
-                width: 160%;
-                height: 160%;
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            50% {
+                transform: scale(1.12);
                 opacity: 0;
-                border-width: 1px;
             }
         }
 
-        @keyframes floatLogo {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-12px);
-            }
-        }
-
-        @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .channel {
-            text-align: center;
-            color: #fff;
+        /* ── Typography ── */
+        h1 {
             font-size: 26px;
-            font-weight: 700;
-            letter-spacing: 0.3px;
-            margin-top: 8px;
-            text-shadow: 0 0 20px rgba(255, 180, 0, 0.5);
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            line-height: 1.2;
         }
 
-        .username {
-            text-align: center;
-            font-weight: 700;
-            margin-top: 6px;
-            font-size: 18px;
-            background: linear-gradient(90deg, #ffb347, #ffd700, #ffb347);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shimmerText 2.5s ease infinite;
-            letter-spacing: 0.4px;
-        }
-
-        @keyframes shimmerText {
-            0%, 100% {
-                background-position: 0% center;
-            }
-            50% {
-                background-position: 100% center;
-            }
-        }
-
-        .join {
-            margin: 22px auto 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .join a {
-            text-decoration: none;
-            width: 100%;
-            text-align: center;
-            padding: 17px 20px;
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: 700;
-            color: #0d001a;
-            background: linear-gradient(135deg, #ffd700, #ff8c00);
-            box-shadow:
-                0 0 30px #ffb347,
-                0 10px 40px rgba(255, 140, 0, 0.5);
-            transition: 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            letter-spacing: 0.5px;
-        }
-
-        .join a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -120%;
-            width: 70%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            transform: skewX(-25deg);
-            animation: shine 2.8s infinite;
-        }
-
-        @keyframes shine {
-            100% {
-                left: 160%;
-            }
-        }
-
-        .join a:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow:
-                0 0 45px #ffb347,
-                0 15px 50px rgba(255, 140, 0, 0.6);
-            background: linear-gradient(135deg, #ffe55c, #ff9f00);
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 14px;
-        }
-
-        .feature {
-            flex: 1 1 calc(50% - 6px);
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 18px;
-            padding: 16px 12px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            transition: 0.3s ease;
-        }
-
-        /* Feature 1 - Vibrant Orange */
-        .feature:nth-child(1) {
-            border-color: rgba(255, 140, 0, 0.5);
-        }
-        .feature:nth-child(1) .icon {
-            background: linear-gradient(135deg, #ff8c00, #ffb347);
-            box-shadow: 0 0 18px #ff8c0088;
-        }
-        .feature:nth-child(1):hover {
-            background: rgba(255, 140, 0, 0.15);
-            border-color: #ff8c00;
-            box-shadow: 0 0 30px #ff8c0055;
-            transform: translateY(-4px);
-        }
-
-        /* Feature 2 - Hot Pink */
-        .feature:nth-child(2) {
-            border-color: rgba(255, 20, 147, 0.5);
-        }
-        .feature:nth-child(2) .icon {
-            background: linear-gradient(135deg, #ff1493, #ff6b9d);
-            box-shadow: 0 0 18px #ff149388;
-        }
-        .feature:nth-child(2):hover {
-            background: rgba(255, 20, 147, 0.15);
-            border-color: #ff1493;
-            box-shadow: 0 0 30px #ff149355;
-            transform: translateY(-4px);
-        }
-
-        /* Feature 3 - Purple */
-        .feature:nth-child(3) {
-            border-color: rgba(147, 51, 234, 0.5);
-        }
-        .feature:nth-child(3) .icon {
-            background: linear-gradient(135deg, #9333ea, #c44dff);
-            box-shadow: 0 0 18px #9333ea88;
-        }
-        .feature:nth-child(3):hover {
-            background: rgba(147, 51, 234, 0.15);
-            border-color: #9333ea;
-            box-shadow: 0 0 30px #9333ea55;
-            transform: translateY(-4px);
-        }
-
-        /* Feature 4 - Emerald */
-        .feature:nth-child(4) {
-            border-color: rgba(16, 185, 129, 0.5);
-        }
-        .feature:nth-child(4) .icon {
-            background: linear-gradient(135deg, #10b981, #34d399);
-            box-shadow: 0 0 18px #10b98188;
-        }
-        .feature:nth-child(4):hover {
-            background: rgba(16, 185, 129, 0.15);
-            border-color: #10b981;
-            box-shadow: 0 0 30px #10b98155;
-            transform: translateY(-4px);
-        }
-
-        .icon {
-            width: 44px;
-            height: 44px;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 19px;
-            flex-shrink: 0;
-            transition: 0.3s;
-        }
-
-        .feature:hover .icon {
-            transform: scale(1.15) rotate(5deg);
-        }
-
-        .feature h3 {
+        .highlight {
+            color: var(--cyan);
+            font-weight: 600;
             font-size: 15px;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .feature p {
-            font-size: 11px;
-            color: #e0d7ff;
-            margin-top: 2px;
-            font-weight: 400;
-        }
-
-        .footer {
-            margin-top: 18px;
-            text-align: center;
-            color: #d0c0f0;
-            font-size: 13px;
-            font-weight: 600;
+            margin: 6px 0 12px;
             letter-spacing: 0.3px;
         }
 
-        .footer i {
-            color: #ffd700;
-            margin: 0 4px;
-            font-size: 12px;
-            filter: drop-shadow(0 0 6px #ffb347);
-            animation: starPop 2s infinite;
+        .desc {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.6;
+            margin: 0 0 20px;
+            max-width: 320px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .footer i:nth-child(2) {
-            animation-delay: 0.6s;
+        /* ── Social Proof ── */
+        .social-proof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 22px;
+            font-size: 13px;
+            color: var(--muted);
         }
 
-        @keyframes starPop {
-            0%, 100% {
-                opacity: 0.7;
+        .social-proof .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            display: inline-block;
+            animation: dotPulse 1.8s ease-in-out infinite;
+        }
+
+        @keyframes dotPulse {
+            0%,
+            100% {
+                opacity: 1;
                 transform: scale(1);
             }
             50% {
-                opacity: 1;
-                transform: scale(1.4);
+                opacity: 0.4;
+                transform: scale(0.8);
             }
         }
 
-        @media(max-height:760px) {
-            body {
-                overflow: auto;
-                padding: 15px;
-                height: auto;
-                min-height: 100vh;
+        .social-proof strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .social-proof .count {
+            color: var(--cyan);
+            font-weight: 700;
+        }
+
+        /* ── Button ── */
+        .btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 17px;
+            text-decoration: none;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+            color: #0b0e14;
+            border: none;
+            box-shadow: 0 4px 24px rgba(56, 189, 248, 0.35), 0 0 40px rgba(56, 189, 248, 0.08);
+            transition: transform 0.25s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            letter-spacing: 0.2px;
+        }
+
+        .btn .icon {
+            font-size: 20px;
+        }
+
+        /* shine */
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 60%;
+            height: 200%;
+            background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+            transform: skewX(-25deg);
+            animation: shine 3.2s ease-in-out infinite;
+        }
+
+        @keyframes shine {
+            0% {
+                left: -60%;
             }
+            100% {
+                left: 120%;
+            }
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 36px rgba(56, 189, 248, 0.55), 0 0 60px rgba(56, 189, 248, 0.15);
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        /* ── Timer Ring ── */
+        .timer-wrap {
+            margin-top: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 16px 20px 18px;
+            border-radius: 18px;
+            background: rgba(56, 189, 248, 0.04);
+            border: 1px solid rgba(56, 189, 248, 0.08);
+        }
+
+        .ring-container {
+            position: relative;
+            width: 72px;
+            height: 72px;
+            flex-shrink: 0;
+        }
+
+        .ring-container svg {
+            transform: rotate(-90deg);
+            width: 72px;
+            height: 72px;
+        }
+
+        .ring-container .bg-ring {
+            fill: none;
+            stroke: rgba(56, 189, 248, 0.10);
+            stroke-width: 5;
+        }
+
+        .ring-container .progress-ring {
+            fill: none;
+            stroke: var(--cyan);
+            stroke-width: 5;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 0.3s ease;
+            filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.3));
+        }
+
+        .ring-container .timer-center {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1;
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+
+        .ring-container .timer-center small {
+            font-size: 10px;
+            font-weight: 400;
+            color: var(--muted);
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        .timer-label {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--muted);
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        .timer-label strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .timer-label .urgent {
+            color: #f87171;
+            font-weight: 600;
+            animation: urgentPulse 1.2s ease-in-out infinite;
+        }
+
+        @keyframes urgentPulse {
+            0%,
+            100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+        }
+
+        /* ── Footer ── */
+        .footer {
+            margin-top: 22px;
+            font-size: 11px;
+            color: #4a5568;
+            letter-spacing: 0.3px;
+        }
+
+        .footer a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 440px) {
+            .container {
+                padding: 24px 16px 22px;
+                border-radius: 22px;
+            }
+
+            .profile {
+                width: 100px;
+                height: 100px;
+            }
+
             h1 {
-                white-space: normal;
-                font-size: 28px;
+                font-size: 22px;
             }
-            .desc {
-                font-size: 13px;
+
+            .btn {
+                font-size: 15px;
+                padding: 14px 16px;
+            }
+
+            .ring-container {
+                width: 62px;
+                height: 62px;
+            }
+
+            .ring-container svg {
+                width: 62px;
+                height: 62px;
+            }
+
+            .ring-container .timer-center {
+                font-size: 17px;
+            }
+
+            .timer-wrap {
+                padding: 14px 14px 16px;
+                gap: 14px;
+            }
+
+            .timer-label {
+                font-size: 12px;
+            }
+
+            .social-proof {
+                font-size: 12px;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .container {
+                padding: 18px 12px 18px;
+            }
+
+            .profile {
+                width: 80px;
+                height: 80px;
+            }
+
+            h1 {
+                font-size: 19px;
+            }
+
+            .ring-container {
+                width: 54px;
+                height: 54px;
+            }
+
+            .ring-container svg {
+                width: 54px;
+                height: 54px;
+            }
+
+            .ring-container .timer-center {
+                font-size: 15px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 12px 14px;
             }
         }
     </style>
-</head>
+  </head>
+
 <body>
 
-    <div class="card">
+    <div class="container">
 
-        <div class="badge">
-            <i class="fas fa-crown"></i> #𝟏 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥
+        <!-- Profile -->
+        <div class="profile-wrap">
+            <img
+            src="https://i.ibb.co/Rp7GDhHD/ashish.jpg"
+            class="profile"
+            alt="Ashish Bhai"
+            loading="lazy"
+            decoding="async"
+            />
         </div>
 
-        <!-- Single line heading as a link -->
-        <h1>
-            <a href="https://t.me/+a2JVj3l03bxiZGM1">★彡𝑨𝒔𝒉𝒊𝒔𝒉 𝑩𝒉𝒂𝒊彡★</a>
-        </h1>
-        
-      <!-- Logo with ring animations -->
-<div class="logo">
+        <h1>Ashish Bhai</h1>
+        <div class="highlight"> Premium Signals &amp; Insights</div>
 
-    <!-- Your image -->
-    <div class="avatar-placeholder">
-        <img src="https://i.ibb.co/9mkjpGjS/ashish.jpg" alt="Ajju Army Logo">
-    </div>
+        <p class="desc">
+            Join our exclusive Telegram community for daily updates, signals &amp; market insights.
+        </p>
 
-</div>
-        
-        <div class="channel">
-           𝑨𝒔𝒉𝒊𝒔𝒉 𝑩𝒉𝒂𝒊 𝑶𝒇𝒇𝒊𝒄𝒊𝒂𝒍
+        <!-- Social Proof -->
+        <div class="social-proof">
+            <span class="dot"></span>
+            <span><strong id="memberCount">1,247</strong> members joined this week</span>
         </div>
 
+        <!-- Button -->
+        <a href="https://telegram.me/+gtZSWC3yG3gyMTVl" target="_blank" class="btn" id="mainCta">
+            𝐉𝐨𝐢𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐍𝐨𝐰
+        </a>
 
-
-        <div class="join">
-            <a href="https://t.me/+a2JVj3l03bxiZGM1">
-                <i class="fab fa-telegram-plane"></i>
-                &nbsp; 𝐉𝐨𝐢𝐧 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐍𝐨𝐰
-            </a>
-        </div>
-
-        <div class="features">
-
-            <div class="feature">
-                <div class="icon"><i class="fas fa-bolt"></i></div>
-                <div>
-                    <h3>𝖨𝗇𝗌𝗍𝖺𝗇𝗍 𝖴𝗉𝖽𝖺𝗍𝖾𝗌</h3>
-                    <p>Never miss a beat.</p>
+        <!-- Timer -->
+        <div class="timer-wrap">
+            <div class="ring-container">
+                <svg viewBox="0 0 72 72">
+                    <circle class="bg-ring" cx="36" cy="36" r="30" />
+                    <circle class="progress-ring" id="timerRing" cx="36" cy="36" r="30"
+                    stroke-dasharray="188.5" stroke-dashoffset="0" />
+                </svg>
+                <div class="timer-center">
+                    <span id="timerDisplay">60</span>
+                    <small>sec</small>
                 </div>
             </div>
-
-            <div class="feature">
-                <div class="icon"><i class="fas fa-gem"></i></div>
-                <div>
-                    <h3>𝖯𝗋𝖾𝗆𝗂𝗎𝗆 𝖢𝗈𝗇𝗍𝖾𝗇𝗍</h3>
-                    <p>Exclusive access only.</p>
-                </div>
+            <div class="timer-label">
+                <strong>Limited offer</strong><br />
+                <span class="urgent">⏳ Hurry, ends soon!</span>
             </div>
-
-            <div class="feature">
-                <div class="icon"><i class="fas fa-users"></i></div>
-                <div>
-                    <h3>𝟧𝟢𝖪+ 𝖠𝖼𝗍𝗂𝗏𝖾 𝖬𝖾𝗆𝖻𝖾𝗋𝗌</h3>
-                    <p>Growing every day.</p>
-                </div>
-            </div>
-
-            <div class="feature">
-                <div class="icon"><i class="fas fa-shield-halved"></i></div>
-                <div>
-                    <h3>𝟣𝟢𝟢% 𝖲𝖺𝖿𝖾</h3>
-                    <p>Trusted & verified.</p>
-                </div>
-            </div>
-
         </div>
 
         <div class="footer">
-            <i class="fas fa-star"></i>𝖳𝗋𝗎𝗌𝗍𝖾𝖽 𝖻𝗒 𝖳𝗁𝗈𝗎𝗌𝖺𝗇𝖽𝗌 • 𝖥𝗋𝖾𝖾 𝗍𝗈 𝖩𝗈𝗂𝗇 • 𝖨𝗇𝗌𝗍𝖺𝗇𝗍 𝖠𝖼𝖼𝖾𝗌𝗌<i class="fas fa-star"></i>
+            Managed by <a href="#" target="_blank">Hustler Ads</a>
         </div>
 
     </div>
+
     <script>
-setTimeout(function(){
-    window.location.href = "https://t.me/+a2JVj3l03bxiZGM1";
-}, 3000); // 8000ms = 8 seconds
-</script>
+        (function() {
+            'use strict';
+
+            // ── Config ──
+            const TOTAL_SECONDS = 5;
+            const CIRCUMFERENCE = 188.5; // 2 * PI * 30
+
+            // ── DOM refs ──
+            const timerDisplay = document.getElementById('timerDisplay');
+            const timerRing = document.getElementById('timerRing');
+            const memberCount = document.getElementById('memberCount');
+
+            // ── State ──
+            let remaining = TOTAL_SECONDS;
+            let endTime = Date.now() + remaining * 1000;
+            let animationFrame = null;
+            let redirectDone = false;
+
+            // ── Social proof counter (animate on load) ──
+            function animateMemberCount() {
+                const target = 1247;
+                const start = 1120;
+                const duration = 1800;
+                const startTime = performance.now();
+
+                function tick(now) {
+                    const elapsed = now - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(start + (target - start) * eased);
+                    memberCount.textContent = current.toLocaleString();
+                    if (progress < 1) {
+                        requestAnimationFrame(tick);
+                    } else {
+                        memberCount.textContent = target.toLocaleString();
+                    }
+                }
+                requestAnimationFrame(tick);
+            }
+
+            // ── Timer update ──
+            function updateTimer() {
+                const now = Date.now();
+                let diff = endTime - now;
+
+                if (diff <= 0) {
+                    diff = 0;
+                    if (!redirectDone) {
+                        redirectDone = true;
+                        // Small delay so the user sees 0 before redirect
+                        setTimeout(function() {
+                            window.location.href = 'https://telegram.me/+gtZSWC3yG3gyMTVl';
+                        }, 300);
+                    }
+                }
+
+                const seconds = Math.ceil(diff / 1000);
+                const clamped = Math.max(0, Math.min(seconds, TOTAL_SECONDS));
+
+                // Update display
+                timerDisplay.textContent = String(clamped).padStart(2, '0');
+
+                // Update ring
+                const progress = clamped / TOTAL_SECONDS;
+                const offset = CIRCUMFERENCE * (1 - progress);
+                timerRing.setAttribute('stroke-dashoffset', offset);
+
+                // Color shift when low
+                if (clamped <= 10) {
+                    timerRing.setAttribute('stroke', '#f87171');
+                } else if (clamped <= 20) {
+                    timerRing.setAttribute('stroke', '#fbbf24');
+                } else {
+                    timerRing.setAttribute('stroke', '#38bdf8');
+                }
+
+                // Continue if not done
+                if (clamped > 0) {
+                    animationFrame = requestAnimationFrame(updateTimer);
+                } else {
+                    // Ensure ring is at 0
+                    timerRing.setAttribute('stroke-dashoffset', CIRCUMFERENCE);
+                    timerRing.setAttribute('stroke', '#f87171');
+                }
+            }
+
+            // ── Start ──
+            animateMemberCount();
+            updateTimer();
+
+            // ── Cleanup on page hide ──
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden && animationFrame) {
+                    cancelAnimationFrame(animationFrame);
+                } else if (!document.hidden) {
+                    // Re-sync when tab becomes visible
+                    endTime = Date.now() + Math.max(0, remaining) * 1000;
+                    if (!animationFrame && remaining > 0) {
+                        updateTimer();
+                    }
+                }
+            });
+
+            // ── Re-sync if user leaves and returns ──
+            window.addEventListener('focus', function() {
+                if (remaining > 0) {
+                    endTime = Date.now() + remaining * 1000;
+                    if (!animationFrame) {
+                        updateTimer();
+                    }
+                }
+            });
+
+        })();
+    </script>
 
 </body>
 </html>
